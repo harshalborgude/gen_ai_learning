@@ -1,0 +1,13 @@
+
+## Problems With ANN (Artificial Neural Network) :
+1) In ANN it have Input Layer , Hidden Layer and Output Layer
+2) For NLP , we have to provide each word one by one in sequencial format , But in ANN , it takes all input at a time , so it cant provide sequencial output of words
+3) No feedback loop is available in ANN while dooing forward propogation
+
+## Simple RNN (Recurrent Neural Network) :
+1) In Simple RNN we can provide inputs word by word , so it can translate each word by word.
+2) We can provide each word by word with sequencial timestamp , and can get converted output in the same way.
+3) RNN also have feedback loop in hidden layer , so whatever output of each neuron from hidden layer , will also sent back to self neuron and all other neurons of the hidden layer. 
+4) So feedback loop is available in RNN.
+
+Refer : 1_a.ANN_and_simple_RNN.png & 1_b.RNN_feedbackLoop.png

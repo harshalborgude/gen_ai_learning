@@ -1,0 +1,25 @@
+
+1) Why Lanchain ?
+
+
+2) Lanchain Ecosystem :
+    a) Langsmith : It is used to debug , Playground , Evaluation , Annotate , MOnitoring of gen ai application 
+    b) Langserve : It helps to create chain of the REST API's to connect each other.
+    c) Langchain Community 
+        1) Model I/O : Model , Prompt , Example Selector , Output Parser 
+        2) Retrieval : Retriever , Document Loader , Vector Store , Text Splitter , Embedding Model 
+        3) Agent Tooling : Tool , Toolkit 
+
+------------------------------------------------------------------------
+
+## Creating Vertual Environment :
+
+1) Install conda 
+2) Set Env Variables
+
+cmd : conda create -p venv python=3.12 -y
+
+3) It will create a virtual envirn with name venv
+4) To activate venv : conda activate venv/ 
+- After activation it will show path of venv 
+
