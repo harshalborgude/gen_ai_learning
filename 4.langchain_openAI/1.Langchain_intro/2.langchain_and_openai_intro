@@ -1,0 +1,7 @@
+
+## Getting started with langchain and openAi :
+- Get setup with langchain , Langsmith and Langserve (create API Keys for OPENAI_API_KEY , LANGCHAIN_API_KEY)
+- Use most basic component of langchain : prompt template , models , and output parser 
+- Build a simple application with langchain
+- trace application with Langsmith
+- serve your application with Langserve

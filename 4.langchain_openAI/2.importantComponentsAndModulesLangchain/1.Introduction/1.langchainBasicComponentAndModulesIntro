@@ -1,0 +1,14 @@
+
+## Retrieval Augmented Generation : 
+    1)  Load : Data Ingestion 
+    2) SPLIT : Data Transformation , Data to text chunks 
+    3) Embedding : Text to vectors 
+    4) Store : Vector Store DB 
+        - FAISS
+        - Chroma DB 
+        - Astra DB 
+    5) Question 
+    6) Retrieve 
+    7) Prompt 
+    8) LLM
+    9) Answer 
