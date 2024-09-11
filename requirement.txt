@@ -13,4 +13,16 @@ langchain-openai
 sentence_transformers
 langchain_huggingface
 faiss-cpu
+chromadblangchain
+python-dotenv
+ipykernel
+langchain-community
+pypdf
+beautifulsoup4
+arxiv
+PyMuPDF
+wikipedia
+langchain-text-splitters
+lxml
+langchain-openai
 chromadb
