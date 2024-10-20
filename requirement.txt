@@ -25,3 +25,4 @@ langserve
 sse_starlette
 mysql-connector-python
 SQLAlchemy
+langflow

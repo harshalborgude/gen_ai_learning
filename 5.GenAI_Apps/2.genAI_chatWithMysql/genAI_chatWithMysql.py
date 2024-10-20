@@ -61,12 +61,13 @@ agent = create_sql_agent(
 )
 
 if "messages" not in st.session_state or st.sidebar.button("Clear Message history"):
-    st.session_state["messages"] = [{"role":"assistant","content":"Ask Question To SQL DB ..."}]
+    st.session_state["messages"] = [{"role":"assistant","content":"Ask Question To DataBase ..."}]
 
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
 
 user_query = st.chat_input(placeholder="Ask Anything from the database")
+print("User Query : ",user_query)
 
 
 if user_query:
@@ -76,7 +77,10 @@ if user_query:
     with st.chat_message("assistant"):
         # streamlit_callback = StreamlitCallbackHandler(st.container())
         # response = agent.run(user_query,callbacks=[streamlit_callback])
-        response = agent.run(user_query)
+        try :
+            response = agent.run(user_query)
+        except :
+             response ="Oops, something went wrong. Please try asking your question again related to databse in simplest way possible! "
         st.session_state.messages.append({"role":"assistant","content":response})
         st.write(response)
 

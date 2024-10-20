@@ -1,0 +1,24 @@
+
+
+
+
+mysql+mysqlconnector://root:Test12345@localhost:3306/test
+
+jdbc:mysql://root:Test12345@localhost:3306/test
+mysql://root:Test12345@localhost:3306/test
+
+sqlalchemy.url = mysql+pymysql://root:Test12345@localhost:3306/test
+
+## Worked with postgres : 
+postgresql://postgres:Test12345@localhost:3307/postgres
+
+
+total number of products
+
+
+
+--------------------------------------------------------------------
+
+
+	1) Langflow only supports postgresql yet , so able to do same with postgresql but failed for mysql 
+	2) 
