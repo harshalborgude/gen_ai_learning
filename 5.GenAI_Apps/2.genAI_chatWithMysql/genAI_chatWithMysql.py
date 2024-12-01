@@ -29,15 +29,17 @@ os.environ['LANGCHAIN_TRACING_V2'] = "true"
 # os.environ['LANGCHAIN_PROJECT'] = os.getenv("LANGCHAIN_PROJECT")
 os.environ['LANGCHAIN_PROJECT'] = "genAI_chatWithMysql"
 
-radio_opt = ["Llama3-8B-8192 from groq","gemma2:2b local"]
+radio_opt = ["gemma2:2b local","Llama3-8B-8192 from groq","Llama-3.2-90b-text-preview from groq"]
 selected_opt = st.sidebar.radio(label="choose the Model",options=radio_opt)
 
 
 ### LLM Model
-if selected_opt == "Llama3-8B-8192 from groq" :
+if selected_opt == "gemma2:2b local":
+    llm = Ollama(model="gemma2:2b")
+elif selected_opt == "Llama3-8B-8192 from groq" :
     llm = ChatGroq(groq_api_key=api_key,model_name="Llama3-8B-8192",streaming=True)
-elif selected_opt == "gemma2:2b local":
-    llm = Ollama(model="gemma2:2b") 
+elif selected_opt == "Llama-3.2-90b-text-preview from groq":
+    llm = ChatGroq(groq_api_key=api_key,model_name="Llama-3.2-90b-text-preview",streaming=True)
 
 print("selected_opt : ",selected_opt)
 print("LLM : ",llm)

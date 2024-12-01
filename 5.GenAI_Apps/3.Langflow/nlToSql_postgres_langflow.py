@@ -40,11 +40,12 @@ TWEAKS = {
   }
 }
 
-query = "total count of orders";
+query = "total count of orders"
 result = run_flow_from_json(flow="nlToSql_postgres_langflow.json",
                             input_value=query,
                             fallback_to_env_vars=True, # False by default
                             tweaks=TWEAKS)
+
 
 print("result : ",result)
 # print("result : ",result[0].outputs[0].outputs["message"]["message"])
